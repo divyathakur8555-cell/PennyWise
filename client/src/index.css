@@ -1,0 +1,83 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #1e293b;
+  background: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button, a {
+  transition: all 0.2s ease;
+}
+
+.pft-shell {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.pft-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.pft-income {
+  color: #16a34a !important;
+}
+
+.pft-expense {
+  color: #dc2626 !important;
+}
+
+.field,
+.pft-input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: white;
+  color: #1e293b;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.field:focus,
+.pft-input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+.primary,
+.pft-button {
+  border-radius: 10px;
+  background: #16a34a;
+  color: white;
+  padding: 10px 18px;
+  font-weight: 600;
+}
+
+.primary:hover,
+.pft-button:hover {
+  background: #15803d;
+}

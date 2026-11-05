@@ -1,0 +1,1 @@
+import {Router} from "express";import auth from "../middleware/authMiddleware.js";import {getAll,create,update,remove,pdf} from "../controllers/transactionController.js";const r=Router();r.use(auth);r.get("/",getAll);r.post("/",create);r.get("/report/pdf",pdf);r.put("/:id",update);r.delete("/:id",remove);export default r;
